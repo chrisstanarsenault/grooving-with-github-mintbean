@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Moment from "react-moment";
 
 export default function UserAreaHeader(props) {
@@ -7,7 +7,7 @@ export default function UserAreaHeader(props) {
   } else {
     return (
       <div>
-        <img src={props.userInfo.avatar_url} />
+        <img src={props.userInfo.avatar_url} alt={props.userInfo.name} />
         <div>
           <h3>{props.userInfo.name}</h3>
           <span>
